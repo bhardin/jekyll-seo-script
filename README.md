@@ -1,7 +1,7 @@
 SEO Jekyll tool
 ===============
 
-One problem that (I have with Jekyll)[http://bretthard.in/2012/06/jekyll-and-seo-optimization/], and I missed from wordpress, was a way to analyze posts for SEO optimization. I borrowed a lot of the work from Wordpress SEO by YOAST.
+One problem that [I have with Jekyll](http://bretthard.in/2012/06/jekyll-and-seo-optimization/), and I missed from wordpress, was a way to analyze posts for SEO optimization. I borrowed a lot of the work from Wordpress SEO by YOAST.
 
 Usage
 -----
