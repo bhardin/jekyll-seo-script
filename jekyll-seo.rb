@@ -47,8 +47,10 @@ if options[:verbose]
 	puts "keyword: #{options[:keyword]}" if options[:keyword]
 	#puts "analyzing post: #{options[:post]}" if options[:post]
 end
- 
-ARGV.each do|f|
+
+if options[:post]
+	f = options[:post]
+
 	puts "Analyzing Post: #{f}..."
 	post = Nokogiri::HTML(open(f))
 
@@ -84,7 +86,7 @@ ARGV.each do|f|
 	post.css('body').each do |this|
 		if options[:verbose]
 			puts "content found"
-			puts "content: #{this}"
+			#puts "content: #{this}"
 		end
 
 		content = this.to_s.scan(/#{options[:keyword]}/i)
@@ -101,14 +103,19 @@ ARGV.each do|f|
 			meta_description = this.attribute("content").to_s.scan(/#{options[:keyword]}/i)
 		end
 	end
+
+	puts ""
+	puts "Article Heading: #{not heading.empty?} (#{heading.count})"
+	puts "Page title: #{not title.empty?} (#{title.count})"
+	# puts "Page URL: Yes (1)"
+	puts "Content: #{not content.empty?} (#{content.count})"
+	puts "Meta description: #{not meta_description.empty?} (#{meta_description.count})"
+	
+else
+	puts "No post given to analyze. Try with -h"
 end
 
-puts ""
-puts "Article Heading: #{not heading.empty?} (#{heading.count})"
-puts "Page title: #{not title.empty?} (#{title.count})"
-# puts "Page URL: Yes (1)"
-puts "Content: #{not content.empty?} (#{content.count})"
-puts "Meta description: #{not meta_description.empty?} (#{meta_description.count})"
+
 
 #You have not used your keyword / keyphrase in any subheading (such as an H2) in your copy.
 #No images appear in this page, consider adding some as appropriate.
