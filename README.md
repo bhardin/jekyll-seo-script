@@ -1,6 +1,8 @@
 SEO Jekyll tool
 ===============
 
+[![endorse](http://api.coderwall.com/bretthardin/endorsecount.png)](http://coderwall.com/bretthardin)
+
 One problem that [I have with Jekyll](http://bretthard.in/2012/06/jekyll-and-seo-optimization/), and I missed from wordpress, was a way to analyze posts for SEO optimization. I borrowed a lot of the work from Wordpress SEO by YOAST.
 
 Usage
@@ -23,6 +25,7 @@ Meta description: true (1)
 
 TODO
 ----
+* turn this into a gem that just adds rake tasks to your Jekyll site
 * Identify SEO terms in the URL
 * You have not used your keyword / keyphrase in any subheading (such as an H2) in your copy.
 * No images appear in this page, consider adding some as appropriate.
