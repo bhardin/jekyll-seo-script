@@ -38,4 +38,4 @@ TODO
 * The meta description contains the primary keyword / phrase.
 * There are 890 words contained in the body copy, this is greater than the 300 word recommended minimum.
 * The page title is more than 40 characters and less than the recommended 70 character limit.
-#The keyword appears in the first paragraph of the copy.
+# The keyword appears in the first paragraph of the copy.
