@@ -9,7 +9,7 @@ Usage
 -----
 Download the jekyll-seo.rb file and run it against the output of jekyll. This is important. You cannot run this on the markdown file, because it does not contain the HTML that is required for SEO analysis.
 
-	jekyll-seo -k "optimize jekyll for seo" _site/2012/06/open-source-attribution/index.html
+	jekyll-seo -k "optimize jekyll for seo" -p _site/2012/06/open-source-attribution/index.html
 
 Output
 ------
