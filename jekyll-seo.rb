@@ -64,7 +64,7 @@ if options[:post]
 		heading = this.to_s.scan(/#{options[:keyword]}/i)
 
 		if options[:verbose]
-			puts "heading-found: #{title}"
+			puts "heading-found: #{heading}"
 		end
 	end
 
