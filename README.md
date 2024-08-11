@@ -1,8 +1,6 @@
 SEO Jekyll tool
 ===============
 
-[![endorse](http://api.coderwall.com/bretthardin/endorsecount.png)](http://coderwall.com/bretthardin)
-
 One problem that [I have with Jekyll](http://bretthard.in/2012/06/jekyll-and-seo-optimization/), and I missed from wordpress, was a way to analyze posts for SEO optimization. I borrowed a lot of the work from Wordpress SEO by YOAST.
 
 Usage
